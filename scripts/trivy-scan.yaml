@@ -1,0 +1,3 @@
+#!/bin/bash
+docker image pull $1
+trivy image --severity HIGH,CRITICAL --exit-code 1 $1
